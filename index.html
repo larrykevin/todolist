@@ -11,19 +11,55 @@
    <header class="header">
       <h1>To do List</h1>
    </header>
-   <main class="main">
-      <section>
-         <p>Calendario</p>
+   <main class="main bg-primary">
+      <section class="calendar">
+         <section class="calendar__info">
+            <div class="calendar__prev" id="prev-month">&#9664;</div>
+            <div class="calendar__month" >
+               <h3 id="month"></h3>
+            </div>
+            <div class="calendar__year">
+               <h3 id="year"></h3>
+            </div>
+            <div class="calendar__next" id="next-month">&#9654;</div>
+         </section>
+         <section class="calendar__week">
+            <div class="calendar__day calendar__item">
+               <p>Lun</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Mar</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Mie</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Jue</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Vie</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Sab</p>
+            </div>
+            <div class="calendar__day calendar__item">
+               <p>Dom</p>
+            </div>
+         </section>
+
+         <div class="calendar__dates" id="dates"></div>
       </section>
    </main>
-   <aside class="aside">
+   <aside class="aside bg-primary">
       <p>Menu</p>
    </aside>
-   <section class="list">
+   <section class="list bg-primary">
       <p>Tareas</p>
    </section>
-   <footer class="footer">
+   <footer class="footer bg-primary">
       <p>Soy un footer</p>
    </footer>
+
+   <script src="js/app.js"></script>
 </body>
 </html>
